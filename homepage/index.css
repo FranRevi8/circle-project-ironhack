@@ -221,5 +221,122 @@ html, body {
 }
 
 .section4{
-    margin-top: 200px;
+    margin: 0 auto;
+    margin-top: 150px;
+    background-image: url(../assets/testimonial-section/orbit.png);
+    background-color: #292E47;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+}
+
+
+.memoji-container{
+    width: 100%;
+    height: 450px;
+    position: absolute;
+}
+
+.memoji{
+    height: 75px;
+}
+
+.pos-1{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    right: auto;
+    bottom: auto;
+}
+
+.pos-2{
+    position: absolute;
+    top: 5%;
+    left: auto;
+    right: 5%;
+    bottom: auto;
+}
+
+.pos-3{
+    position: absolute;
+    top: auto;
+    left: 5%;
+    right: auto;
+    bottom: 5%;
+}
+
+.pos-4{
+    position: absolute;
+    top: auto;
+    left: auto;
+    right: 5%;
+    bottom: 5%;
+}
+
+.orbit-separator{
+    position: relative;
+    top: 30%;
+    width: 100%;
+    background-color: #292E47;
+}
+
+.orbit-separator h2{
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.orbit-separator p{
+    color: #FFC600;
+    font-size: 24px;
+}
+
+.booking-profile{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 30%;
+}
+
+.booking-img{
+    margin-top: 20px;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+}
+
+.booking-text{
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.booking-name{
+    color: #A2D6F9;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.booking{
+    color: white;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section5{
+    margin-top: 500px;
 }

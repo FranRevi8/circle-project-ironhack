@@ -154,3 +154,72 @@ html, body {
     width: 175px;
     transition-duration: 0.5s;
 }
+
+.section3{
+    text-align: left;
+    padding-top: 120px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.section3 h1{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.cards-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.project-card{
+    width: 30%;
+    background-color: white;
+    box-shadow: 0px 0px 0px rgb(99, 99, 99);
+    transition-duration: 0.5s;
+    height: 360px;
+}
+
+.project-card:hover{
+    box-shadow: 10px 5px 5px rgb(99, 99, 99);
+    transition-duration: 0.5s;
+}
+
+.project-img{
+    width: 100%;
+    height: 200px;
+}
+
+.project-link{
+    text-decoration: none;
+}
+
+.project-title{
+    color: black;
+    font-size: 24px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.project-description{
+    color: grey;
+    font-size: 16px;
+    padding-left: 20px;
+    margin-bottom: 50px;
+}
+
+.learn-more-link{
+    color: #072AC8;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.section4{
+    margin-top: 200px;
+}

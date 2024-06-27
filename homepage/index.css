@@ -1,7 +1,6 @@
 html, body {
     text-align: center;
     scroll-behavior: smooth;
-    overflow-x: hidden;
     background-color: #F2F4FC;
     margin: 0 auto;
     padding: 0;
@@ -31,6 +30,11 @@ html, body {
     text-decoration: none;
 }
 
+.link:hover{
+    text-decoration: underline;
+    color: #072AC8;
+}
+
 .centered-ul {
     list-style: none;
     display: flex;
@@ -41,19 +45,83 @@ html, body {
 .contact-btn{
     background-color: #072AC8;
     padding: 15px;
+    width: 90px;
+}
+
+.contact-btn a:hover{
+    color: #FFC600;
 }
 
 .white-text{
     color: white;
+    text-decoration: none;
 }
 
 .blue-text{
     color: #072AC8;
     font-weight: bold;
+    padding: 20px;
     
 }
 
 .grey-text{
     color: grey;
     font-weight: bold;
+    padding: 20px;
+}
+
+.section1{
+    display: flex;
+    text-align: left;
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 469px;
+    justify-content: space-between;
+}
+
+.section1-texts{
+    width: 58%;
+}
+
+.background-hero{
+    background-image: url(../assets/hero-section/hero-image.png);
+    background-size: contain;
+    width: 41%;
+}
+
+.title{
+    font-size: 50px;
+    color: #292E47;
+    padding-top: 50px;
+    font-weight: 700;
+    letter-spacing: -0.07cap;
+}
+
+.subtitle{
+    font-size: 24px;
+    color: #292E47;
+    font-weight: normal;
+}
+
+.section1-btns{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.card1{
+    width: 250px;
+    position: relative;
+    top: 0%;
+    left: -15%;
+}
+
+.card2{
+    width: 250px;
+    position: relative;
+    bottom: -5%;
+    left: 55%
 }

@@ -220,6 +220,10 @@ html, body {
     padding-left: 20px;
 }
 
+.learn-more-link:hover{
+    text-decoration: underline;
+}
+
 .section4{
     margin: 0 auto;
     margin-top: 150px;
@@ -323,20 +327,130 @@ html, body {
     margin-top: 5px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .section5{
-    margin-top: 500px;
+    margin: 0 auto;
+    margin-top: 150px;
+    text-align: left;
+    width: 85%;
+}
+
+.section5 h1{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.service-card{
+    width: 30%;
+    background-color: white;
+    box-shadow: 0px 0px 0px rgb(99, 99, 99);
+    transition-duration: 0.5s;
+    height: 330px;
+    width: 320px;
+}
+
+.service-card:hover{
+    box-shadow: 10px 5px 5px rgb(99, 99, 99);
+    transition-duration: 0.5s;
+}
+
+.service-img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #D1EDFF;
+    border-radius: 50%;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    margin-left: 20px;
+}
+
+.service-img{
+    width: 40px;
+    height: 40px;
+}
+
+.service-title{
+    color: black;
+    font-size: 24px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    letter-spacing: -0.05cap;
+}
+
+.service-description{
+    color: grey;
+    font-size: 16px;
+    padding-left: 20px;
+    margin-bottom: 50px;
+    width: 80%;
+}
+
+.section6{
+    margin-top: 175px;
+    height: 400px;
+    background-color: #FFC600;
+}
+
+.section6 h2{
+    padding-top: 80px;
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+    letter-spacing: -0.05cap;
+}
+
+.section6 h3{
+    padding-bottom: 35px;
+    font-size: 30px;
+    color: black;
+    font-weight: 100;
+}
+
+.mail-input{
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+}
+
+.mail-input input{
+    height: 60px;
+    width: 450px;
+    border: 1px solid #FFC600;
+    background-image: url(../assets/newsletter/icon/mail.svg);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: 6%;
+    text-align: center;
+}
+
+.mail-input input:hover{
+    border: 1px solid black;
+}
+
+.mail-input input:placeholder-shown{
+    text-align: center;
+    font-size: 20px;
+}
+
+.mail-input button{
+    background-color: #072AC8;
+    border: 0;
+    height: 60px;
+    width: 220px;
+    font-size: 20px;
+    color: white;
+}
+.mail-input button:hover{
+    color: #FFC600;
+}
+
+footer{
+    margin-top: 300px;
 }

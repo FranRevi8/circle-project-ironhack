@@ -125,3 +125,32 @@ html, body {
     bottom: -5%;
     left: 55%
 }
+
+.section2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 120px;
+}
+
+.collab-link{
+    text-decoration: none;
+}
+
+.collab-link:hover{
+    text-decoration: none;
+}
+
+.collab-logo{
+    filter: grayscale(1);
+    width: 100px;
+    transition-duration: 0.5s;
+}
+
+.collab-logo:hover{
+    filter: none;
+    width: 175px;
+    transition-duration: 0.5s;
+}

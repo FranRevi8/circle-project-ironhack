@@ -79,6 +79,25 @@ body {
   padding: 20px;
 }
 
+.burguer{
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  top: 40px;
+  right: 11.5%;
+  height: 30px;
+  width: 50px;
+}
+
+.burguer-line{
+  margin: 0 auto;
+  height: 5px;
+  width: 30px;
+  background-color: var(--primary-color);
+  border-radius: 15%;
+}
+
 .section1 {
   display: flex;
   text-align: left;
@@ -348,7 +367,6 @@ body {
 }
 
 .service-card {
-  width: 30%;
   background-color: white;
   box-shadow: 0px 0px 0px rgb(99, 99, 99);
   transition-duration: 0.5s;
@@ -509,4 +527,1086 @@ body {
   text-decoration: underline;
   color: var(--primary-color);
   font-size: 17px;
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+  
+  #logo {
+    position: absolute;
+    text-decoration: none;
+  }
+  
+  .centered-ul {
+    display: none;
+  }
+  
+  #contact-btn-nav {
+    position: absolute;
+    left: 48%;
+    right: 52%;
+    background-color: var(--primary-color);
+    padding: 15px;
+    width: 90px;
+  }
+
+  .burguer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 40px;
+    right: 8%;
+    height: 30px;
+    width: 50px;
+  }
+  
+  .burguer-line{
+    margin: 0 auto;
+    height: 5px;
+    width: 30px;
+    background-color: var(--primary-color);
+    border-radius: 15%;
+  }
+
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .background-hero {
+    background-image: url(../assets/hero-section/hero-image.png);
+    background-size: cover;
+    width: 100%;
+    height: 660px;
+  }
+  
+  .section1-texts {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 40px;
+    color: var(--terciary-color);
+    margin: 0 auto;
+    margin-top: 0;
+    font-weight: 700;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    color: var(--terciary-color);
+    font-weight: normal;
+  }
+
+  .card1 {
+    width: 250px;
+    position: relative;
+    top: 0%;
+    left: -15%;
+    display: none;
+  }
+
+  .card2 {
+    width: 250px;
+    position: relative;
+    bottom: -5%;
+    left: 55%;
+    display: none;
+  }
+
+  .section2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    margin: 0 auto;
+    padding-top: 120px;
+  }
+
+  .collab-link {
+    width: 33%;
+    text-decoration: none;
+    margin: auto auto;
+  }
+
+  .section3 {
+    text-align: left;
+    padding-top: 120px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 1300px;
+  }
+
+  .project-card {
+    width: 70%;
+    background-color: white;
+    box-shadow: 0px 0px 0px rgb(99, 99, 99);
+    transition-duration: 0.5s;
+    height: 400px;
+  }
+
+   .section4 {
+    margin: 0 auto;
+    margin-top: 150px;
+    background-image: url(../assets/testimonial-section/orbit.png);
+    background-color: var(--terciary-color);
+    background-size: cover;
+    width: 90%;
+    height: 370px;
+  }
+
+  .memoji-container {
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    display: none;
+  }
+
+  .orbit-separator h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  .orbit-separator p {
+    color: var(--secondary-color);
+    font-size: 16px;
+  }
+
+  .section5 {
+    margin: 0 auto;
+    margin-top: 150px;
+    text-align: left;
+    width: 85%;
+  }
+
+  #service-cards{
+    height: 1100px;
+  }
+
+  .service-card {
+    background-color: white;
+    box-shadow: 0px 0px 0px rgb(99, 99, 99);
+    transition-duration: 0.5s;
+    height: 350px;
+    width: 95%;
+  }
+
+  .section6 {
+    margin: 0 auto;
+    margin-top: 150px;
+    height: 400px;
+    background-color: var(--secondary-color);
+    width: 90%;
+  }
+
+  .section6 h2 {
+    padding-top: 80px;
+    font-size: 32px;
+    color: black;
+    font-weight: bold;
+    letter-spacing: -0.05cap;
+  }
+
+  .section6 h3 {
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: black;
+    font-weight: 100;
+  }
+
+  .mail-input {
+    height: 150px;
+    margin: 0 auto;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+  }
+
+  .mail-input input {
+    height: 60px;
+    width: 100%;
+    border: 1px solid var(--secondary-color);
+    background-image: url(../assets/newsletter/icon/mail.svg);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: 6%;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .mail-input button {
+    background-color: var(--primary-color);
+    border: 0;
+    height: 60px;
+    width: 120px;
+    font-size: 20px;
+    color: white;
+  }
+
+  .footer {
+    margin: 0 auto;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .footer-text {
+    text-align: center;
+  }
+
+  .footer-links {
+    width: 100%;
+    padding-top: 35px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 899px) {
+
+  #logo {
+    position: absolute;
+    text-decoration: none;
+  }
+  
+  .centered-ul {
+    display: none;
+  }
+  
+  #contact-btn-nav {
+    position: absolute;
+    left: 45%;
+    right: 55%;
+    background-color: var(--primary-color);
+    padding: 15px;
+    width: 90px;
+  }
+
+  .burguer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 40px;
+    right: 8%;
+    height: 30px;
+    width: 50px;
+  }
+  
+  .burguer-line{
+    margin: 0 auto;
+    height: 5px;
+    width: 30px;
+    background-color: var(--primary-color);
+    border-radius: 15%;
+  }
+
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .background-hero {
+    background-image: url(../assets/hero-section/hero-image.png);
+    background-size: cover;
+    width: 100%;
+    height: 660px;
+  }
+  
+  .section1-texts {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 40px;
+    color: var(--terciary-color);
+    margin: 0 auto;
+    margin-top: 0;
+    font-weight: 700;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    color: var(--terciary-color);
+    font-weight: normal;
+  }
+
+  .card1 {
+    width: 250px;
+    position: relative;
+    top: 0%;
+    left: -15%;
+    display: none;
+  }
+
+  .card2 {
+    width: 250px;
+    position: relative;
+    bottom: -5%;
+    left: 55%;
+    display: none;
+  }
+
+  .section2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    margin: 0 auto;
+    padding-top: 120px;
+  }
+
+  .collab-link {
+    width: 33%;
+    text-decoration: none;
+    margin: auto auto;
+  }
+
+  .section3 {
+    text-align: left;
+    padding-top: 120px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 1300px;
+  }
+
+  .project-card {
+    width: 90%;
+    background-color: white;
+    box-shadow: 0px 0px 0px rgb(99, 99, 99);
+    transition-duration: 0.5s;
+    height: 400px;
+  }
+
+   .section4 {
+    margin: 0 auto;
+    margin-top: 150px;
+    background-image: url(../assets/testimonial-section/orbit.png);
+    background-color: var(--terciary-color);
+    background-size: cover;
+    width: 90%;
+    height: 370px;
+  }
+
+  .memoji-container {
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    display: none;
+  }
+
+  .orbit-separator h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  .orbit-separator p {
+    color: var(--secondary-color);
+    font-size: 16px;
+  }
+
+  .section5 {
+    margin: 0 auto;
+    margin-top: 150px;
+    text-align: left;
+    width: 85%;
+  }
+
+  #service-cards{
+    height: 1100px;
+  }
+
+  .service-card {
+    background-color: white;
+    box-shadow: 0px 0px 0px rgb(99, 99, 99);
+    transition-duration: 0.5s;
+    height: 350px;
+    width: 95%;
+  }
+
+  .section6 {
+    margin: 0 auto;
+    margin-top: 150px;
+    height: 400px;
+    background-color: var(--secondary-color);
+    width: 90%;
+  }
+
+  .section6 h2 {
+    padding-top: 80px;
+    font-size: 32px;
+    color: black;
+    font-weight: bold;
+    letter-spacing: -0.05cap;
+  }
+
+  .section6 h3 {
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: black;
+    font-weight: 100;
+  }
+
+  .mail-input {
+    height: 150px;
+    margin: 0 auto;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+  }
+
+  .mail-input input {
+    height: 60px;
+    width: 100%;
+    border: 1px solid var(--secondary-color);
+    background-image: url(../assets/newsletter/icon/mail.svg);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: 6%;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .mail-input button {
+    background-color: var(--primary-color);
+    border: 0;
+    height: 60px;
+    width: 120px;
+    font-size: 20px;
+    color: white;
+  }
+
+  .footer {
+    margin: 0 auto;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .footer-text {
+    text-align: center;
+  }
+
+  .footer-links {
+    width: 100%;
+    padding-top: 35px;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 699px) {
+
+  #logo {
+    position: absolute;
+    text-decoration: none;
+  }
+  
+  .centered-ul {
+    display: none;
+  }
+  
+  #contact-btn-nav {
+    position: absolute;
+    left: 40%;
+    right: 60%;
+    background-color: var(--primary-color);
+    padding: 15px;
+    width: 90px;
+    height: 25px;
+  }
+
+  .burguer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 40px;
+    right: 8%;
+    height: 30px;
+    width: 50px;
+  }
+  
+  .burguer-line{
+    margin: 0 auto;
+    height: 5px;
+    width: 30px;
+    background-color: var(--primary-color);
+    border-radius: 15%;
+  }
+
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .background-hero {
+    background-image: url(../assets/hero-section/hero-image.png);
+    background-size: cover;
+    width: 90%;
+    height: 270px;
+  }
+  
+  .section1-texts {
+    width: 90%;
+  }
+
+  .section1-btns{
+    height: 100px;
+    font-size: 14px;
+  }
+
+  .contact-btn{
+    height: 10px;
+    text-align: center;
+  }
+
+  .grey-text{
+    padding: 0;
+    padding-left: 10px;
+    text-align: center;
+  }
+
+
+  .title {
+    font-size: 40px;
+    color: var(--terciary-color);
+    margin: 0 auto;
+    margin-top: 0;
+    font-weight: 700;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    color: var(--terciary-color);
+    font-weight: normal;
+  }
+
+  .card1 {
+    width: 250px;
+    position: relative;
+    top: 0%;
+    left: -15%;
+    display: none;
+  }
+
+  .card2 {
+    width: 250px;
+    position: relative;
+    bottom: -5%;
+    left: 55%;
+    display: none;
+  }
+
+  .section2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+
+  .collab-link {
+    width: 80%;
+    text-decoration: none;
+    margin: auto auto;
+  }
+
+  .section3 {
+    text-align: left;
+    padding-top: 120px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .section3 h1{
+    text-align: justify;
+    font-size: 24px;
+  }
+
+  .cards-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 1300px;
+  }
+
+  .project-card {
+    width: 90%;
+    background-color: white;
+    box-shadow: 0px 0px 0px rgb(99, 99, 99);
+    transition-duration: 0.5s;
+    height: 400px;
+  }
+
+   .section4 {
+    margin-top: 100px;
+    background-image: url(../assets/testimonial-section/orbit.png);
+    background-color: var(--terciary-color);
+    background-size: cover;
+    width: 85%;
+    height: 480px;
+  }
+
+  .memoji-container {
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    display: none;
+  }
+
+  .orbit-separator h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 0;
+    padding-bottom: 10px;
+  }
+
+  .orbit-separator p {
+    color: var(--secondary-color);
+    font-size: 16px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .section5 {
+    margin: 0 auto;
+    margin-top: 150px;
+    text-align: left;
+    width: 85%;
+  }
+
+  .section5 h1{
+    text-align: justify;
+    font-size: 24px;
+  }
+
+  #service-cards{
+    height: 1100px;
+  }
+
+  .service-card {
+    background-color: white;
+    box-shadow: 0px 0px 0px rgb(99, 99, 99);
+    transition-duration: 0.5s;
+    height: 350px;
+    width: 95%;
+  }
+
+  .section6 {
+    margin: 0 auto;
+    margin-top: 150px;
+    height: 400px;
+    background-color: var(--secondary-color);
+    width: 90%;
+  }
+
+  .section6 h2 {
+    padding-top: 80px;
+    font-size: 32px;
+    color: black;
+    font-weight: bold;
+    letter-spacing: -0.05cap;
+  }
+
+  .section6 h3 {
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: black;
+    font-weight: 100;
+  }
+
+  .mail-input {
+    height: 150px;
+    margin: 0 auto;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+  }
+
+  .mail-input input {
+    height: 60px;
+    width: 100%;
+    border: 1px solid var(--secondary-color);
+    background-image: url(../assets/newsletter/icon/mail.svg);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: 6%;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .mail-input input:placeholder-shown{
+    font-size: 12px;
+  }
+
+  .mail-input button {
+    background-color: var(--primary-color);
+    border: 0;
+    height: 60px;
+    width: 120px;
+    font-size: 20px;
+    color: white;
+  }
+
+  .footer {
+    margin: 0 auto;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .footer-text {
+    text-align: center;
+  }
+
+  .footer-links {
+    width: 100%;
+    padding-top: 35px;
+  }
+}
+
+@media (min-width: 1px) and (max-width: 449px) {
+
+  #logo {
+    position: absolute;
+    text-decoration: none;
+  }
+  
+  .centered-ul {
+    display: none;
+  }
+  
+  #contact-btn-nav {
+    position: absolute;
+    left: 37%;
+    right: 63%;
+    background-color: var(--primary-color);
+    padding: 15px;
+    width: 70px;
+    height: 35px;
+  }
+
+  .burguer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 40px;
+    right: 8%;
+    height: 30px;
+    width: 50px;
+  }
+  
+  .burguer-line{
+    margin: 0 auto;
+    height: 5px;
+    width: 30px;
+    background-color: var(--primary-color);
+    border-radius: 15%;
+  }
+
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .background-hero {
+    background-image: url(../assets/hero-section/hero-image.png);
+    background-size: cover;
+    width: 90%;
+    height: 270px;
+  }
+  
+  .section1-texts {
+    width: 90%;
+  }
+
+  .section1-btns{
+    height: 100px;
+    font-size: 14px;
+  }
+
+  .contact-btn{
+    height: 10px;
+    text-align: center;
+  }
+
+  .grey-text{
+    padding: 0;
+    padding-left: 10px;
+    text-align: center;
+  }
+
+
+  .title {
+    font-size: 40px;
+    color: var(--terciary-color);
+    margin: 0 auto;
+    margin-top: 0;
+    font-weight: 700;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    color: var(--terciary-color);
+    font-weight: normal;
+  }
+
+  .card1 {
+    width: 250px;
+    position: relative;
+    top: 0%;
+    left: -15%;
+    display: none;
+  }
+
+  .card2 {
+    width: 250px;
+    position: relative;
+    bottom: -5%;
+    left: 55%;
+    display: none;
+  }
+
+  .section2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+
+  .collab-link {
+    width: 80%;
+    text-decoration: none;
+    margin: auto auto;
+  }
+
+  .section3 {
+    text-align: left;
+    padding-top: 120px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .section3 h1{
+    text-align: justify;
+    font-size: 24px;
+  }
+
+  .cards-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 1300px;
+  }
+
+  .project-card {
+    width: 90%;
+    background-color: white;
+    box-shadow: 0px 0px 0px rgb(99, 99, 99);
+    transition-duration: 0.5s;
+    height: 400px;
+  }
+
+   .section4 {
+    margin-top: 100px;
+    background-image: url(../assets/testimonial-section/orbit.png);
+    background-color: var(--terciary-color);
+    background-size: cover;
+    width: 85%;
+    height: 480px;
+  }
+
+  .memoji-container {
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    display: none;
+  }
+
+  .orbit-separator h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 0;
+    padding-bottom: 10px;
+  }
+
+  .orbit-separator p {
+    color: var(--secondary-color);
+    font-size: 16px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .section5 {
+    margin: 0 auto;
+    margin-top: 150px;
+    text-align: left;
+    width: 85%;
+  }
+
+  .section5 h1{
+    text-align: justify;
+    font-size: 24px;
+  }
+
+  #service-cards{
+    height: 1100px;
+  }
+
+  .service-card {
+    background-color: white;
+    box-shadow: 0px 0px 0px rgb(99, 99, 99);
+    transition-duration: 0.5s;
+    height: 350px;
+    width: 95%;
+  }
+
+  .section6 {
+    margin: 0 auto;
+    margin-top: 150px;
+    height: 400px;
+    background-color: var(--secondary-color);
+    width: 90%;
+  }
+
+  .section6 h2 {
+    padding-top: 80px;
+    font-size: 32px;
+    color: black;
+    font-weight: bold;
+    letter-spacing: -0.05cap;
+  }
+
+  .section6 h3 {
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: black;
+    font-weight: 100;
+  }
+
+  .mail-input {
+    height: 150px;
+    margin: 0 auto;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+  }
+
+  .mail-input input {
+    height: 60px;
+    width: 100%;
+    border: 1px solid var(--secondary-color);
+    background-image: url(../assets/newsletter/icon/mail.svg);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: 6%;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .mail-input input:placeholder-shown{
+    font-size: 12px;
+  }
+
+  .mail-input button {
+    background-color: var(--primary-color);
+    border: 0;
+    height: 60px;
+    width: 120px;
+    font-size: 20px;
+    color: white;
+  }
+
+  .footer {
+    margin: 0 auto;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .footer-text {
+    text-align: center;
+  }
+
+  .footer-links {
+    width: 100%;
+    padding-top: 35px;
+  }
 }

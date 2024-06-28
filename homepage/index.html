@@ -9,7 +9,7 @@
   <body>
     <header>
       <nav class="nav-bar">
-        <a class="logo" href="#">
+        <a id="logo" class="logo" href="#">
           <img src="../assets/logos/circle.svg" alt="Logo" />
         </a>
         <ul class="centered-ul">
@@ -17,10 +17,15 @@
           <li><a class="link grey-text" href="#">Projects</a></li>
           <li><a class="link grey-text" href="#">Services</a></li>
         </ul>
-        <div class="contact-btn">
+        <div id="contact-btn-nav" class="contact-btn">
           <a class="white-text" href="#">Contact Us</a>
         </div>
       </nav>
+      <div class="burguer">
+        <div class="burguer-line"></div>
+        <div class="burguer-line"></div>
+        <div class="burguer-line"></div>
+      </div>
     </header>
     <section class="section1">
       <div class="section1-texts">
@@ -171,7 +176,7 @@
     </section>
     <section class="section5">
       <h1>Our Services</h1>
-      <div class="cards-container">
+      <div id="service-cards" class="cards-container">
         <div class="service-card">
           <div class="service-img-container">
             <img
@@ -229,7 +234,7 @@
       <h2>Do you have any questions?</h2>
       <h3>Let us help you!</h3>
       <div class="mail-input">
-        <input type="email" placeholder="Enter your Email" />
+        <input type="email" placeholder="Enter your Email" name="email" />
         <button>Suscribe</button>
       </div>
     </section>

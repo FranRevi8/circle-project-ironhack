@@ -28,25 +28,51 @@
       </div>
     </header>
     <form class="inputs-container">
-        <h1>Contact Us</h1>
-        <div class="name-div">
-            <label for="name">Full Name</label><br>
-            <input class="name" type="text" placeholder="Enter your full name" name="name">
+      <h1>Contact Us</h1>
+      <div class="name-div">
+        <label for="name">Full Name</label><br />
+        <input
+          class="name"
+          type="text"
+          placeholder="Enter your full name"
+          name="name"
+        />
+      </div>
+      <br />
+      <div class="mail-phone-div">
+        <div class="mail-div">
+          <label for="email">Email</label><br />
+          <input
+            class="email"
+            type="email"
+            placeholder="Enter your email address"
+            name="email"
+          />
         </div>
-        <div class="mail-phone-div">
-            <div>
-                <label for="email">Email</label><br>
-                <input class="email" type="email" placeholder="Enter your email address" name="email">
-            </div>
-            <div>
-                <label for="phone">Phone</label><br>
-                <input class="phone" type="number" placeholder="Enter your phone number" name="phone">
-            </div>
+        <div class="phone-div">
+          <label for="phone">Phone</label><br />
+          <input
+            class="phone"
+            type="number"
+            placeholder="Enter your phone number"
+            name="phone"
+          />
         </div>
-        <div>
-            <label for="message">Message</label><br>
-            <input class="message" type="text" placeholder="Write your message here..." name="message">
-        </div>
+      </div>
+      <br />
+      <div class="message-div">
+        <label for="message">Message</label><br />
+        <textarea
+          name="message"
+          class="message"
+          type="text"
+          placeholder="
+Write your message here..."
+          name="message"
+        ></textarea>
+      </div>
+      <br /><br />
+      <button id="submit-btn">Submit</button>
     </form>
     <footer class="footer">
       <div class="footer-text">

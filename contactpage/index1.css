@@ -145,7 +145,66 @@
     letter-spacing: 0.05cap;
   }
 
-  .mail{
+  .mail-div{
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .email{
+    width: 95%;
+    border: none;
+    background-color: rgba(107, 112, 141, 0.1);
+    height: 60px;
+    margin-block-start: 10px;
+    padding-left: 10px;
+  }
+
+  .phone-div{
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .phone{
+    width: 100%;
+    border: none;
+    background-color: rgba(107, 112, 141, 0.1);
+    height: 60px;
+    margin-block-start: 10px;
+    padding-left: 10px;
+  }
+
+  .message-div label{
+    color: grey;
+    letter-spacing: 0.05cap;
+  }
+
+  .message-div{
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .message{
+    width: 100%;
+    border: none;
+    background-color: rgba(107, 112, 141, 0.1);
+    height: 200px;
+    margin-block-start: 10px;
+    padding-left: 10px;
+  }
+
+  #submit-btn{
+    width: 101%;
+    padding: 0;
+    margin: 0 auto;
+    height: 60px;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    letter-spacing: 0.05cap;
+    font-weight: normal;
   }
   
   .footer {
@@ -357,6 +416,24 @@
       background-color: var(--primary-color);
       border-radius: 15%;
     }
+
+    .mail-phone-div{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .email{
+      width: 100%;
+      border: none;
+      background-color: rgba(107, 112, 141, 0.1);
+      height: 60px;
+      margin-block-start: 10px;
+      padding-left: 10px;
+    }
   
     .footer {
       margin: 0 auto;
@@ -416,6 +493,24 @@
       width: 30px;
       background-color: var(--primary-color);
       border-radius: 15%;
+    }
+
+    .mail-phone-div{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .email{
+      width: 100%;
+      border: none;
+      background-color: rgba(107, 112, 141, 0.1);
+      height: 60px;
+      margin-block-start: 10px;
+      padding-left: 10px;
     }
   
     .footer {

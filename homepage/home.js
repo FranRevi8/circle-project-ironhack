@@ -31,3 +31,20 @@ burguer.addEventListener("click", () => {
         <div class="burguer-line-yellow"></div>`;
   }
 });
+
+const returnToTop = document.getElementById("return-top");
+
+window.addEventListener("scroll", () => {
+  let contentHeight = document.documentElement.scrollHeight;
+  let scrollPosition = window.innerHeight + window.pageYOffset;
+
+  if (scrollPosition > contentHeight / 1.5) {
+    returnToTop.style.display = "block";
+  } else {
+    returnToTop.style.display = "none";
+  }
+});
+
+function topScroll() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}

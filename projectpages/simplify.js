@@ -15,52 +15,51 @@ fetch(endpoint)
     return response.json();
   })
   .then((data) => {
-      const simplify = data.find(i => i.uuid === "1");
+    const simplify = data.find((i) => i.uuid === "1");
 
-      const name = simplify.name;
-      const description = simplify.description;
-      const content = simplify.content;
-      const bigImg = simplify.image;
-      const date = simplify.completed_on;
+    const name = simplify.name;
+    const description = simplify.description;
+    const content = simplify.content;
+    const bigImg = simplify.image;
+    const date = simplify.completed_on;
 
-      title.textContent = name;
-      subtitle.textContent = description;
-      largeText.innerHTML = content;
-      image.src = bigImg;
-      completionDate.textContent = date;
-    });
+    title.textContent = name;
+    subtitle.textContent = description;
+    largeText.innerHTML = content;
+    image.src = bigImg;
+    completionDate.textContent = date;
+  });
 
+const burguer = document.getElementById("burguer");
+const burguerMenu = document.getElementById("hidden-nav");
 
-    const burguer = document.getElementById("burguer");
-    const burguerMenu = document.getElementById("hidden-nav");
-    
-    burguer.addEventListener("click", () => {
-      if (
-        burguerMenu.innerHTML ===
-        `<ul class="hidden-nav hidden-nav-active">
+burguer.addEventListener("click", () => {
+  if (
+    burguerMenu.innerHTML ===
+    `<ul class="hidden-nav hidden-nav-active">
         <li><a href="../homepage/home.html">Home</a></li>
         <li><a href="../homepage/home.html">Projects</a></li>
         <li><a href="../homepage/home.html">Services</a></li>
       </ul>`
-      ) {
-        burguerMenu.innerHTML = `<ul class="hidden-nav">
+  ) {
+    burguerMenu.innerHTML = `<ul class="hidden-nav">
         <li><a href="../homepage/home.html">Home</a></li>
         <li><a href="../homepage/home.html">Projects</a></li>
         <li><a href="../homepage/home.html">Services</a></li>
       </ul>`;
-    
-        burguer.innerHTML = `<div class="burguer-line"></div>
+
+    burguer.innerHTML = `<div class="burguer-line"></div>
             <div class="burguer-line"></div>
             <div class="burguer-line"></div>`;
-      } else {
-        burguerMenu.innerHTML = `<ul class="hidden-nav hidden-nav-active">
+  } else {
+    burguerMenu.innerHTML = `<ul class="hidden-nav hidden-nav-active">
         <li><a href="../homepage/home.html">Home</a></li>
         <li><a href="../homepage/home.html">Projects</a></li>
         <li><a href="../homepage/home.html">Services</a></li>
       </ul>`;
-    
-        burguer.innerHTML = `<div class="burguer-line-yellow"></div>
+
+    burguer.innerHTML = `<div class="burguer-line-yellow"></div>
             <div class="burguer-line-yellow"></div>
             <div class="burguer-line-yellow"></div>`;
-      }
-    });
+  }
+});

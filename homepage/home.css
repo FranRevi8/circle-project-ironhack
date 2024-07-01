@@ -67,8 +67,8 @@ body {
   text-decoration: none;
 }
 
-.white-text:hover{
-  color: var(--secondary-color)
+.white-text:hover {
+  color: var(--secondary-color);
 }
 
 .blue-text {
@@ -83,7 +83,7 @@ body {
   padding: 20px;
 }
 
-.burguer{
+.burguer {
   display: none;
   flex-direction: column;
   justify-content: space-around;
@@ -94,7 +94,7 @@ body {
   width: 50px;
 }
 
-.burguer-line{
+.burguer-line {
   margin: 0 auto;
   height: 5px;
   width: 30px;
@@ -102,7 +102,7 @@ body {
   border-radius: 15%;
 }
 
-.burguer-line-yellow{
+.burguer-line-yellow {
   margin: 0 auto;
   height: 5px;
   width: 30px;
@@ -110,8 +110,7 @@ body {
   border-radius: 15%;
 }
 
-
-.hidden-nav{
+.hidden-nav {
   text-align: center;
   list-style: none;
   display: flex;
@@ -121,10 +120,14 @@ body {
   position: absolute;
   right: 0%;
   top: -150%;
-  background: linear-gradient(to bottom, rgba(169, 169, 169, 1) 0%, rgba(169, 169, 169, 0) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(169, 169, 169, 1) 0%,
+    rgba(169, 169, 169, 0) 100%
+  );
 }
 
-.hidden-nav-active{
+.hidden-nav-active {
   text-align: center;
   list-style: none;
   display: flex;
@@ -134,10 +137,14 @@ body {
   position: absolute;
   right: 0%;
   top: -5%;
-  background: linear-gradient(to bottom, rgba(169, 169, 169, 1) 0%, rgba(169, 169, 169, 0) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(169, 169, 169, 1) 0%,
+    rgba(169, 169, 169, 0) 100%
+  );
 }
 
-.hidden-nav-active li{
+.hidden-nav-active li {
   margin: 0 auto;
   margin-top: 120px;
   width: 50%;
@@ -146,12 +153,12 @@ body {
   padding-top: 12%;
 }
 
-.hidden-nav-active a{
+.hidden-nav-active a {
   text-decoration: none;
   color: white;
 }
 
-.hidden-nav-active a:hover{
+.hidden-nav-active a:hover {
   text-decoration: none;
   color: var(--secondary-color);
 }
@@ -531,6 +538,28 @@ body {
   font-size: 20px;
 }
 
+#return-top {
+  height: 60px;
+  background-image: url(../assets/arrow.png);
+  background-size: cover;
+  box-shadow: 5px 5px 5px rgb(99, 99, 99);
+  width: 60px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  position: fixed;
+  right: 5%;
+  bottom: 10%;
+  transition-duration: 0.2s;
+}
+
+#return-top:hover {
+  background-color: var(--secondary-color);
+  height: 65px;
+  width: 65px;
+  transition-duration: 0.2s;
+  box-shadow: 10px 5px 5px rgb(99, 99, 99);
+}
+
 .footer {
   margin: 0 auto;
   margin-top: 150px;
@@ -584,16 +613,15 @@ body {
 }
 
 @media (min-width: 900px) and (max-width: 1200px) {
-  
   #logo {
     position: absolute;
     text-decoration: none;
   }
-  
+
   .centered-ul {
     display: none;
   }
-  
+
   #contact-btn-nav {
     position: absolute;
     left: 48%;
@@ -603,7 +631,7 @@ body {
     width: 90px;
   }
 
-  .burguer{
+  .burguer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -613,8 +641,8 @@ body {
     height: 30px;
     width: 50px;
   }
-  
-  .burguer-line{
+
+  .burguer-line {
     margin: 0 auto;
     height: 5px;
     width: 30px;
@@ -639,7 +667,7 @@ body {
     width: 100%;
     height: 660px;
   }
-  
+
   .section1-texts {
     width: 100%;
   }
@@ -715,7 +743,7 @@ body {
     height: 400px;
   }
 
-   .section4 {
+  .section4 {
     margin: 0 auto;
     margin-top: 150px;
     background-image: url(../assets/testimonial-section/orbit.png);
@@ -750,7 +778,7 @@ body {
     width: 85%;
   }
 
-  #service-cards{
+  #service-cards {
     height: 1100px;
   }
 
@@ -788,7 +816,7 @@ body {
   .mail-input {
     height: 150px;
     margin: 0 auto;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 60%;
@@ -836,16 +864,15 @@ body {
 }
 
 @media (min-width: 700px) and (max-width: 899px) {
-
   #logo {
     position: absolute;
     text-decoration: none;
   }
-  
+
   .centered-ul {
     display: none;
   }
-  
+
   #contact-btn-nav {
     position: absolute;
     left: 45%;
@@ -855,7 +882,7 @@ body {
     width: 90px;
   }
 
-  .burguer{
+  .burguer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -865,8 +892,8 @@ body {
     height: 30px;
     width: 50px;
   }
-  
-  .burguer-line{
+
+  .burguer-line {
     margin: 0 auto;
     height: 5px;
     width: 30px;
@@ -891,7 +918,7 @@ body {
     width: 100%;
     height: 660px;
   }
-  
+
   .section1-texts {
     width: 100%;
   }
@@ -967,7 +994,7 @@ body {
     height: 400px;
   }
 
-   .section4 {
+  .section4 {
     margin: 0 auto;
     margin-top: 150px;
     background-image: url(../assets/testimonial-section/orbit.png);
@@ -1002,7 +1029,7 @@ body {
     width: 85%;
   }
 
-  #service-cards{
+  #service-cards {
     height: 1100px;
   }
 
@@ -1040,7 +1067,7 @@ body {
   .mail-input {
     height: 150px;
     margin: 0 auto;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 60%;
@@ -1088,16 +1115,15 @@ body {
 }
 
 @media (min-width: 450px) and (max-width: 699px) {
-
   #logo {
     position: absolute;
     text-decoration: none;
   }
-  
+
   .centered-ul {
     display: none;
   }
-  
+
   #contact-btn-nav {
     position: absolute;
     left: 40%;
@@ -1108,7 +1134,7 @@ body {
     height: 25px;
   }
 
-  .burguer{
+  .burguer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -1118,8 +1144,8 @@ body {
     height: 30px;
     width: 50px;
   }
-  
-  .burguer-line{
+
+  .burguer-line {
     margin: 0 auto;
     height: 5px;
     width: 30px;
@@ -1145,27 +1171,26 @@ body {
     width: 90%;
     height: 270px;
   }
-  
+
   .section1-texts {
     width: 90%;
   }
 
-  .section1-btns{
+  .section1-btns {
     height: 100px;
     font-size: 14px;
   }
 
-  .contact-btn{
+  .contact-btn {
     height: 10px;
     text-align: center;
   }
 
-  .grey-text{
+  .grey-text {
     padding: 0;
     padding-left: 10px;
     text-align: center;
   }
-
 
   .title {
     font-size: 40px;
@@ -1221,7 +1246,7 @@ body {
     margin: 0 auto;
   }
 
-  .section3 h1{
+  .section3 h1 {
     text-align: justify;
     font-size: 24px;
   }
@@ -1244,7 +1269,7 @@ body {
     height: 400px;
   }
 
-   .section4 {
+  .section4 {
     margin-top: 100px;
     background-image: url(../assets/testimonial-section/orbit.png);
     background-color: var(--terciary-color);
@@ -1282,12 +1307,12 @@ body {
     width: 85%;
   }
 
-  .section5 h1{
+  .section5 h1 {
     text-align: justify;
     font-size: 24px;
   }
 
-  #service-cards{
+  #service-cards {
     height: 1100px;
   }
 
@@ -1325,7 +1350,7 @@ body {
   .mail-input {
     height: 150px;
     margin: 0 auto;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 60%;
@@ -1343,7 +1368,7 @@ body {
     font-size: 20px;
   }
 
-  .mail-input input:placeholder-shown{
+  .mail-input input:placeholder-shown {
     font-size: 12px;
   }
 
@@ -1377,16 +1402,15 @@ body {
 }
 
 @media (min-width: 1px) and (max-width: 449px) {
-
   #logo {
     position: absolute;
     text-decoration: none;
   }
-  
+
   .centered-ul {
     display: none;
   }
-  
+
   #contact-btn-nav {
     position: absolute;
     left: 37%;
@@ -1397,7 +1421,7 @@ body {
     height: 35px;
   }
 
-  .burguer{
+  .burguer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -1407,8 +1431,8 @@ body {
     height: 30px;
     width: 50px;
   }
-  
-  .burguer-line{
+
+  .burguer-line {
     margin: 0 auto;
     height: 5px;
     width: 30px;
@@ -1434,27 +1458,26 @@ body {
     width: 90%;
     height: 270px;
   }
-  
+
   .section1-texts {
     width: 90%;
   }
 
-  .section1-btns{
+  .section1-btns {
     height: 100px;
     font-size: 14px;
   }
 
-  .contact-btn{
+  .contact-btn {
     height: 10px;
     text-align: center;
   }
 
-  .grey-text{
+  .grey-text {
     padding: 0;
     padding-left: 10px;
     text-align: center;
   }
-
 
   .title {
     font-size: 40px;
@@ -1510,7 +1533,7 @@ body {
     margin: 0 auto;
   }
 
-  .section3 h1{
+  .section3 h1 {
     text-align: justify;
     font-size: 24px;
   }
@@ -1533,7 +1556,7 @@ body {
     height: 400px;
   }
 
-   .section4 {
+  .section4 {
     margin-top: 100px;
     background-image: url(../assets/testimonial-section/orbit.png);
     background-color: var(--terciary-color);
@@ -1571,12 +1594,12 @@ body {
     width: 85%;
   }
 
-  .section5 h1{
+  .section5 h1 {
     text-align: justify;
     font-size: 24px;
   }
 
-  #service-cards{
+  #service-cards {
     height: 1100px;
   }
 
@@ -1614,7 +1637,7 @@ body {
   .mail-input {
     height: 150px;
     margin: 0 auto;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 60%;
@@ -1632,7 +1655,7 @@ body {
     font-size: 20px;
   }
 
-  .mail-input input:placeholder-shown{
+  .mail-input input:placeholder-shown {
     font-size: 12px;
   }
 

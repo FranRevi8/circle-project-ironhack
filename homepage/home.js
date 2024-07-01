@@ -5,13 +5,13 @@ burguer.addEventListener("click", () => {
   if (
     burguerMenu.innerHTML ===
     `<ul class="hidden-nav hidden-nav-active">
-    <li><a href="./index.html">Home</a></li>
+    <li><a href="./home.html">Home</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#services">Services</a></li>
   </ul>`
   ) {
     burguerMenu.innerHTML = `<ul class="hidden-nav">
-    <li><a href="./index.html">Home</a></li>
+    <li><a href="./home.html">Home</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#services">Services</a></li>
   </ul>`;
@@ -21,7 +21,7 @@ burguer.addEventListener("click", () => {
         <div class="burguer-line"></div>`;
   } else {
     burguerMenu.innerHTML = `<ul class="hidden-nav hidden-nav-active">
-    <li><a href="./index.html">Home</a></li>
+    <li><a href="./home.html">Home</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#services">Services</a></li>
   </ul>`;

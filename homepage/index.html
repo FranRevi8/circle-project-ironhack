@@ -9,19 +9,26 @@
   <body>
     <header>
       <nav class="nav-bar">
-        <a id="logo" class="logo" href="#">
+        <a id="logo" class="logo" href="../homepage/index.html">
           <img src="../assets/logos/circle.svg" alt="Logo" />
         </a>
         <ul class="centered-ul">
-          <li><a class="link blue-text" href="#">Home</a></li>
-          <li><a class="link grey-text" href="#">Projects</a></li>
-          <li><a class="link grey-text" href="#">Services</a></li>
+          <li><a class="link blue-text" href="../homepage/index.html">Home</a></li>
+          <li><a class="link grey-text" href="#projects">Projects</a></li>
+          <li><a class="link grey-text" href="#services">Services</a></li>
         </ul>
         <div id="contact-btn-nav" class="contact-btn">
           <a class="white-text" href="../contactpage/index1.html">Contact Us</a>
         </div>
       </nav>
-      <div class="burguer">
+      <div id="hidden-nav">
+        <ul class="hidden-nav">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+        </ul>
+      </div>
+      <div class="burguer" id="burguer">
         <div class="burguer-line"></div>
         <div class="burguer-line"></div>
         <div class="burguer-line"></div>
@@ -36,10 +43,10 @@
         </h3>
         <div class="section1-btns">
           <div class="contact-btn">
-            <a class="white-text" href="#">Get in Touch</a>
+            <a class="white-text" href="../contactpage/index1.html">Get in Touch</a>
           </div>
           <div>
-            <a class="link grey-text" href="#">See our work</a>
+            <a class="link grey-text" href="#projects">See our work</a>
           </div>
         </div>
       </div>
@@ -85,7 +92,7 @@
         />
       </a>
     </section>
-    <section class="section3">
+    <section class="section3" id="projects">
       <h1>Recent Projects</h1>
       <div class="cards-container">
         <div class="project-card">
@@ -174,7 +181,7 @@
         </div>
       </div>
     </section>
-    <section class="section5">
+    <section class="section5" id="services">
       <h1>Our Services</h1>
       <div id="service-cards" class="cards-container">
         <div class="service-card">
@@ -259,5 +266,6 @@
         </ul>
       </div>
     </footer>
+    <script src="./index.js"></script>
   </body>
 </html>

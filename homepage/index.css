@@ -67,6 +67,10 @@ body {
   text-decoration: none;
 }
 
+.white-text:hover{
+  color: var(--secondary-color)
+}
+
 .blue-text {
   color: var(--primary-color);
   font-weight: bold;
@@ -525,10 +529,6 @@ body {
   height: 60px;
   width: 180px;
   font-size: 20px;
-  color: white;
-}
-.mail-input button:hover {
-  color: var(--secondary-color);
 }
 
 .footer {

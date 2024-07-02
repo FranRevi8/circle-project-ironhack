@@ -38,7 +38,7 @@ window.addEventListener("scroll", () => {
   let contentHeight = document.documentElement.scrollHeight;
   let scrollPosition = window.innerHeight + window.pageYOffset;
 
-  if (scrollPosition > contentHeight / 1.5) {
+  if (scrollPosition > contentHeight / 2) {
     returnToTop.style.display = "block";
   } else {
     returnToTop.style.display = "none";

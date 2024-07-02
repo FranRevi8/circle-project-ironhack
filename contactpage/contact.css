@@ -173,6 +173,19 @@ body {
   text-align: left;
 }
 
+.no-alert {
+  position: absolute;
+  top: 1500%;
+}
+
+.alert {
+  position: relative;
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.01cap;
+}
+
 .name-div {
   width: 100%;
   margin: 0 auto;
@@ -254,6 +267,10 @@ body {
   height: 200px;
   margin-block-start: 10px;
   padding-left: 10px;
+}
+
+#message:placeholder-shown {
+  padding-top: 10px;
 }
 
 #submit-btn {

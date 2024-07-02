@@ -52,6 +52,9 @@
           placeholder="Enter your full name"
           name="name"
         />
+        <div id="name-error">
+          <p class="no-alert">Debes introducir un nombre</p>
+        </div>
       </div>
       <br />
       <div class="mail-phone-div">
@@ -63,6 +66,9 @@
             placeholder="Enter your email address"
             name="email"
           />
+          <div id="mail-error">
+            <p class="no-alert">Debes introducir un e-mail</p>
+          </div>
         </div>
         <div class="phone-div">
           <label for="phone">Phone</label><br />
@@ -71,7 +77,11 @@
             type="text"
             placeholder="Enter your phone number"
             name="phone"
+            maxlength="12"
           />
+          <div id="phone-error">
+            <p class="no-alert">Debes introducir tu nº de teléfono</p>
+          </div>
         </div>
       </div>
       <br />
@@ -81,10 +91,12 @@
           name="message"
           id="message"
           type="text"
-          placeholder="
-Write your message here..."
+          placeholder="Write your message here..."
           name="message"
         ></textarea>
+        <div id="message-error">
+          <p class="no-alert">El mensaje debe tener al menos 5 caracteres</p>
+        </div>
       </div>
       <br /><br />
       <button id="submit-btn">Submit</button>

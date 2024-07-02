@@ -1168,8 +1168,8 @@ body {
   .background-hero {
     background-image: url(../assets/hero-section/hero-image.png);
     background-size: cover;
-    width: 90%;
-    height: 270px;
+    width: 70%;
+    height: 315px;
   }
 
   .section1-texts {

@@ -3,10 +3,11 @@ const subtitle = document.getElementById("subtitle");
 const largeText = document.getElementById("large-text");
 const image = document.getElementById("image");
 const completionDate = document.getElementById("completed-on-2");
+let cardsContainer = document.querySelector(".cards-container");
 
 let url = new URL(window.location.href);
 let params = new URLSearchParams(url.search);
-let wantedId = params.get('id');
+let wantedId = params.get("id");
 
 const endpoint =
   "https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects";
@@ -20,6 +21,26 @@ fetch(endpoint)
   })
   .then((data) => {
     const selectedProject = data.find((i) => i.uuid == wantedId);
+    const otherProjects = data.filter((data) => data.uuid !== wantedId);
+
+    otherProjects.forEach((element) => {
+      cardsContainer.innerHTML += `<div class="project-card">
+          <a class="project-link" href="../projectpages/project.html?id=${element.uuid}">
+            <img
+              class="project-img"
+              src="../assets/projects-section/${element.uuid}.jpg"
+              alt="Project 1"
+            />
+            <div>
+              <h4 class="project-title">${element.name}</h4>
+              <p class="project-description">${element.description}</p>
+              <a class="learn-more-link" href="../projectpages/project.html?id=${element.uuid}"
+                >Learn more</a
+              >
+            </div>
+          </a>
+        </div>`;
+    });
 
     title.textContent = selectedProject.name;
     subtitle.textContent = selectedProject.description;

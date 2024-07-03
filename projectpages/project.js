@@ -21,17 +21,11 @@ fetch(endpoint)
   .then((data) => {
     const selectedProject = data.find((i) => i.uuid == wantedId);
 
-    const name = selectedProject.name;
-    const description = selectedProject.description;
-    const content = selectedProject.content;
-    const bigImg = selectedProject.image;
-    const date = selectedProject.completed_on;
-
-    title.textContent = name;
-    subtitle.textContent = description;
-    largeText.innerHTML = content;
-    image.src = bigImg;
-    completionDate.textContent = date;
+    title.textContent = selectedProject.name;
+    subtitle.textContent = selectedProject.description;
+    largeText.innerHTML = selectedProject.content;
+    image.src = selectedProject.image;
+    completionDate.textContent = selectedProject.completed_on;
   });
 
 const burguer = document.getElementById("burguer");

@@ -119,12 +119,13 @@ body {
   width: 30%;
   position: absolute;
   right: 0%;
-  top: -1500%;
+  top: -500%;
   background: linear-gradient(
     to bottom,
     rgba(169, 169, 169, 1) 0%,
     rgba(169, 169, 169, 0) 100%
   );
+  transition-duration: 0.3s;
 }
 
 .hidden-nav-active {
@@ -142,9 +143,10 @@ body {
     rgba(169, 169, 169, 1) 0%,
     rgba(169, 169, 169, 0) 100%
   );
+  transition-duration: 0.3s;
 }
 
-.hidden-nav-active li {
+.hidden-nav li {
   margin: 0 auto;
   margin-top: 120px;
   width: 50%;
@@ -153,12 +155,12 @@ body {
   padding-top: 12%;
 }
 
-.hidden-nav-active a {
+.hidden-nav a {
   text-decoration: none;
   color: white;
 }
 
-.hidden-nav-active a:hover {
+.hidden-nav a:hover {
   text-decoration: none;
   color: var(--secondary-color);
 }

@@ -4,6 +4,10 @@ const largeText = document.getElementById("large-text");
 const image = document.getElementById("image");
 const completionDate = document.getElementById("completed-on-2");
 
+let url = new URL(window.location.href);
+let params = new URLSearchParams(url.search);
+let wantedId = params.get('id');
+
 const endpoint =
   "https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects";
 
@@ -15,13 +19,13 @@ fetch(endpoint)
     return response.json();
   })
   .then((data) => {
-    const dashcoin = data.find((i) => i.uuid === "2");
+    const selectedProject = data.find((i) => i.uuid == wantedId);
 
-    const name = dashcoin.name;
-    const description = dashcoin.description;
-    const content = dashcoin.content;
-    const bigImg = dashcoin.image;
-    const date = dashcoin.completed_on;
+    const name = selectedProject.name;
+    const description = selectedProject.description;
+    const content = selectedProject.content;
+    const bigImg = selectedProject.image;
+    const date = selectedProject.completed_on;
 
     title.textContent = name;
     subtitle.textContent = description;

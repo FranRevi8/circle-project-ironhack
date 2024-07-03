@@ -21,6 +21,7 @@ burguer.addEventListener("click", () => {
 
 const returnToTop = document.getElementById("return-top");
 
+window.addEventListener("load", () => returnToTop.style.display = "none");
 window.addEventListener("scroll", () => {
   let contentHeight = document.documentElement.scrollHeight;
   let scrollPosition = window.innerHeight + window.pageYOffset;

@@ -1,30 +1,15 @@
 const burguer = document.getElementById("burguer");
-const burguerMenu = document.getElementById("hidden-nav");
+const burguerMenu = document.querySelector(".hidden-nav");
 
 burguer.addEventListener("click", () => {
-  if (
-    burguerMenu.innerHTML ===
-    `<ul class="hidden-nav hidden-nav-active">
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="../index.html">Projects</a></li>
-    <li><a href="../index.html">Services</a></li>
-  </ul>`
-  ) {
-    burguerMenu.innerHTML = `<ul class="hidden-nav">
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="../index.html">Projects</a></li>
-    <li><a href="../index.html">Services</a></li>
-  </ul>`;
+  if (burguerMenu.className === `hidden-nav hidden-nav-active`) {
+    burguerMenu.className = `hidden-nav`;
 
     burguer.innerHTML = `<div class="burguer-line"></div>
         <div class="burguer-line"></div>
         <div class="burguer-line"></div>`;
   } else {
-    burguerMenu.innerHTML = `<ul class="hidden-nav hidden-nav-active">
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="../index.html">Projects</a></li>
-    <li><a href="../index.html">Services</a></li>
-  </ul>`;
+    burguerMenu.className = `hidden-nav hidden-nav-active`;
 
     burguer.innerHTML = `<div class="burguer-line-yellow"></div>
         <div class="burguer-line-yellow"></div>
